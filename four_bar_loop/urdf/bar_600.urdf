@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="four_bar_loop">
+  <link
+    name="link600">
+    <inertial>
+      <origin
+        xyz="0.299999999999999 -2.77555756156289E-16 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="0.657988983509361" />
+      <inertia
+        ixx="0.000124288351544794"
+        ixy="5.28616321722464E-17"
+        ixz="1.58648778406374E-19"
+        iyy="0.0273377746587313"
+        iyz="1.0208396151309E-20"
+        izz="0.0273633646627496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link600.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link600.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

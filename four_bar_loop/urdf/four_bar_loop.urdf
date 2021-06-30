@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="four_bar_loop">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.2 -0.015 1.74835140148008E-19"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="9.7288351544794E-05"
+        ixy="9.39613486142712E-21"
+        ixz="-5.10668537218206E-20"
+        iyy="0.00990191548728164"
+        iyz="-1.23972577531264E-21"
+        izz="0.00987632548326325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link300">
+    <inertial>
+      <origin
+        xyz="0.150000000000002 6.10622663543836E-16 -0.015"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="8.37883515447938E-05"
+        ixy="-2.05998412772246E-18"
+        ixz="7.64093897891319E-22"
+        iyy="0.00495551827184943"
+        iyz="2.2134267314846E-21"
+        izz="0.00498110827586782" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link300.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link300.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0.4 0 0"
+      rpy="1.5707963267949 -1.22186923358005 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link300" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link600">
+    <inertial>
+      <origin
+        xyz="0.299999999999999 -2.77555756156289E-16 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="0.000124288351544794"
+        ixy="5.28616321722464E-17"
+        ixz="1.58648778406374E-19"
+        iyy="0.0273377746587313"
+        iyz="1.0208396151309E-20"
+        izz="0.0273633646627496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link600.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link600.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.300000000000002 0 0"
+      rpy="0 0 1.6467688489042" />
+    <parent
+      link="link300" />
+    <child
+      link="link600" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link450">
+    <inertial>
+      <origin
+        xyz="0.225 6.93889390390723E-18 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="0.000104038351544794"
+        ixy="-1.18923425794504E-18"
+        ixz="5.47123212578432E-20"
+        iyy="0.0132048334330502"
+        iyz="-3.20327472669562E-21"
+        izz="0.0132304234370686" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link450.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bar_loop/meshes/link450.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.599999999999998 0 -0.03"
+      rpy="0 0 2.01169536959859" />
+    <parent
+      link="link600" />
+    <child
+      link="link450" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
